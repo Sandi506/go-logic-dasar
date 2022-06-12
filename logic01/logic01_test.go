@@ -100,11 +100,33 @@ func TestLogic06(t *testing.T) {
 }
 
 func TestLogic07(t *testing.T) {
-
+	n := 10
+	a := 4
+	kelipatantiga := 0
+	for i := 1; i <= n; i++ {
+		if i%2 == 1 {
+			fmt.Print(a, "\t")
+		} else {
+			kelipatantiga += 3
+			fmt.Print(kelipatantiga, "\t")
+		}
+	}
 }
 
 func TestLogic08(t *testing.T) {
+	n := 10
+	a := 1
+	b := 1
 
+	for i := 0; i < n; i++ {
+		if i%2 == 0 {
+			a *= 2
+			fmt.Print(a, "\t")
+		} else {
+			b *= 5
+			fmt.Print(b, "\t")
+		}
+	}
 }
 
 func TestLogic09(t *testing.T) {
